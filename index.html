@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>평화의 전당</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="myo"></div>
+	<h1> 평화 平和 </h1>
+
+	<div class="buddha-container">
+        <img src="left.png" alt="Buddha 1" id="buddhaImg1">
+        <img src="buddha.png" alt="Buddha 2" id="buddhaImg2">
+    </div>
+    <marquee id="welcome"><br>평화의 전당에 오신 것을 환영합니다.</marquee>
+    <button id="nextBut" onclick="location.href='next.html'">다음</button>
+
+
+    <audio id="banyaSnd" src="banya.mp3"></audio>
+    <audio id="yaSnd" src="tak.mp3"></audio>
+
+    <audio id="banyaSnd" src="banya.mp3"></audio>
+    <audio id="yaSnd" src="tak.mp3"></audio>
+
+    <script>
+       const audio1 = document.getElementById('banyaSnd');
+        const audio2 = document.getElementById('yaSnd');
+        
+        const buddhaImage1 = document.getElementById('buddhaImg1');
+        const buddhaImage2 = document.getElementById('buddhaImg2');
+
+        
+        buddhaImage1.addEventListener('click', function() {
+            if (audio1.paused) {
+                audio1.play();
+            } else {
+                audio1.pause();
+            }
+        });
+
+        
+        buddhaImage2.addEventListener('click', function() {
+            if (audio2.paused) {
+                audio2.play();
+            } else {
+                audio2.pause();
+            }
+        });
+
+        window.onload = function() {
+            alert("환영합니다.");
+        }
+    </script>
+
+</body>
+</html>

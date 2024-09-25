@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{  font-family: "Pretendard", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body{ display: block;
+}
+
+h1{	padding-top: 50px;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+#myo{
+	z-index: -1;
+	position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, 
+    	mediumturquoise 100px, white 200px, yellow);
+}
+
+#sky{
+	position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+   
+}
+
+}
+#welcome {	margin-top: 97vh;
+			width: 100%;
+            position: relative;
+            white-space: nowrap;
+            display: inline-block;
+            color: black;
+            font-size: 20px;
+        }
+#nextBut {
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+   	font-weight: 600;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+     
+}
+
+.c1{
+	text-align: center;
+	width: 300px;
+}
+
+.buddha-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Space between the images */
+        }
+
+.buddha-container img {
+            width: 500px;
+            cursor: pointer;
+        }
+.buddha-container img:hover {
+            transform: scale(1.1); /* Enlarge the image slightly */
+            opacity: 0.8; /* Make the image slightly transparent */
+        }
